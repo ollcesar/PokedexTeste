@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>POKEDEX</title>
+</head>
+<body>
+    <h1>POKEDEX</h1>
+
+    <div class="pokeContainer" id="pokeContainer">
+        <div class="flex-container">
+            <div class="dropdown-container">
+                <label for="pokemonSelect">Escolha um Pokémon:</label>
+                <select id="pokemonSelect"></select>
+            </div>
+
+            <div class="pokemon">
+                <div class="imgContainer">
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png" alt="None" id="pokemonImage">
+                </div>
+                <div class="info">
+                    <span class="number" id="pokemonNumber">#1</span>
+                    <h3 class="name" id="pokemonName">Bulbasaur</h3>
+                    <small class="type" id="pokemonType">Tipo: Glass</small>
+                </div>
+                <div id="pokemonDetails" class="details">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
