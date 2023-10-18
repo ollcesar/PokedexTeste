@@ -1,0 +1,124 @@
+/* Modificações no CSS para melhorar o visual */
+
+/* Estilos gerais */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    background: linear-gradient(to right, rgb(197, 197, 206), rgb(255, 255, 255), rgb(155, 155, 158));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    letter-spacing: 5px;
+}
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Container principal da Pokédex */
+.pokeContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 20px;
+    padding: 10px;
+}
+.dropdown-container {
+    margin: 10px 0;
+}
+
+/* Estilo do cartão do Pokémon */
+.pokemon {
+    background: linear-gradient(to right, rgb(131, 131, 134), rgb(228, 228, 233), rgb(197, 197, 206));
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    margin: 10px 0;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilização do container da imagem */
+.imgContainer {
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgContainer img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Estilização do número do Pokémon */
+.number {
+    background-color: rgba(0, 0, 0, 0.15);
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-top: 7px;
+}
+
+/* Estilização do nome do Pokémon */
+.name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    letter-spacing: 1.5px;
+    margin-top: 20px;
+
+}
+
+/* Estilização do tipo do Pokémon */
+.type {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+/* Estilização do menu suspenso pokemonSelect */
+
+#pokemonSelect {
+    padding: 10px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    width: 200px;
+    margin-top: 10px;
+    text-transform: capitalize;
+    outline: none;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+#pokemonSelect:hover {
+    border-color: #0078D4;
+    background-color: #f5f5f5;
+}
+
+#pokemonSelect:focus {
+    border-color: #0078D4;
+    background-color: #f5f5f5;
+}
